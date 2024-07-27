@@ -5,8 +5,8 @@ import { useState } from "react";
 function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
-  const onTaskUpdate = (e) => {
-    setNewTask(e.target.value);
+  const onTaskUpdate = (event) => {
+    setNewTask(event.target.value);
   };
   const onNewTask = (e) => {
     e.preventDefault();
